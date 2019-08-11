@@ -1,0 +1,86 @@
+{#レイアウトを継承します#}
+{% extends "layout/layout.twig" %}
+
+{#HTMLのタイトルを定義します。#}
+{% block title %}TOP{% endblock %}
+
+{# 適用させたいスタイルシートのパスを指定します #}
+{% block header_scripts_add %}
+<link rel="stylesheet" href="/assets/css/top.css" >
+{% endblock %}
+
+{#ここから表示したい情報を記載します。#}
+{% block page_content %}
+    <div class="main text-center box">
+    <div class="body">
+      <div class="explain">
+      <h2 class="ruby">しゅしゅ</h2>
+      <h1 class="title">お 酒 酒 め</h1>
+      <p class="sub-title">あなたにとっての最高のお酒を探しに行きませんか？<p>
+      </div>
+            </div>
+              <div class="sub-main">
+                  <div class="btn-resize">
+                  <button class="link-button btn btn-info btn-lg btn-block" onclick="location.href='/recommend/'">(ログインし)お酒を探す!</button>
+                  </div>
+                  <div  class="optext" id="optext">
+                    <div class="sub-main">
+                    <h2>お酒酒めって？</h2>
+                    <div>
+                      「お酒酒め」は一人ひとりに合ったお酒をお酒酒め(オススメ)するサービス。
+                    </div>
+                    <div>
+                      様々なお酒の中から、あなたにピッタリのお酒を紹介します。
+                    </div>
+
+                  </div>
+                  <div class="album">
+                    <img class="img1" src="/assets/img/alc/1-beer.jpg" alt="beer">
+                    <img class="img2" src="/assets/img/alc/10-shochu.jpg" alt="shochu">
+                    <img class="img3" src="/assets/img/alc/2-highball.jpg" alt="highball">
+                    <img class="img4" src="/assets/img/alc/5-wine.jpg" alt="wine">
+                    </div>
+                    <div class=sub-main>
+                    <h2>サービス</h2>
+                    <div style="text-align:left;　padding:2em;">
+                      <h4>
+                        お酒を探す
+                      </h4>
+                      <div class="feature-osyusyume">
+                        あなたにピッタリのお酒をお酒酒め(オススメ)する
+                      </div>
+                      <h4>
+                        お酒日記
+                      </h4>
+                      <div class="feature-osyusyume">
+                        あなたの飲んだお酒を記録しましょう！<span class="small-size-text">(近日予定)</span>
+                      </div>
+                      <h4>
+                        お酒相談
+                      </h4>
+                      <div class="feature-osyusyume">
+                        あなた専属のソムリエ/バーテンダーが新しいお酒に出会う手助けをします。<span class="small-size-text">(有料,近日予定)</span>
+                      </div>
+                    </div>
+
+                    <p class="lets">さあ、見つけましょう<p>
+                  </div>
+                  </div>
+                  <div class="btn-resize">
+                    <button class="link-button btn btn-info btn-lg btn-block" onclick="location.href='/recommend/'">(ログインし)お酒を探す!</button>
+                  </div>
+                  <div class="btn-resize">
+                    <button class="link-button btn btn-info btn-lg btn-block" onclick="location.href='/register/'">新規会員登録</button>
+                  </div>
+              </div>
+    </div>
+            {#共通フッタとして追記したい情報を記載します。#}
+            <div class = "footer">
+            {% block footer_scripts_add %}{% endblock %}
+          </div>
+
+
+
+
+
+{% endblock %}

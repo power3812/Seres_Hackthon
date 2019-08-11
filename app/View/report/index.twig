@@ -1,0 +1,22 @@
+{#レイアウトを継承します#}
+{% extends "layout/layout.twig" %}
+
+
+
+{#HTMLのタイトルを定義します。#}
+{% block title %}オススメのお酒は{% endblock %}
+
+{# 適用させたいスタイルシートのパスを指定します #}
+{% block header_scripts_add %}
+<link rel="stylesheet" href="/assets/css/recommend.css" >
+{% endblock %}
+{#ここから表示したい情報を記載します。#}
+{% block page_content %}
+{{date}}
+
+{% endblock %}
+
+{#共通フッタとして追記したい情報を記載します。#}
+
+
+{% block footer_scripts_add %}{% endblock %}

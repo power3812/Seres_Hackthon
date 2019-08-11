@@ -1,0 +1,41 @@
+.main-box{
+  margin:1em;
+}
+.imp{
+  padding-top: 20px;
+}
+.alc-name{
+  font-size:3em;
+}
+.alc-pic{
+  width:100%;
+  height:100%;
+}
+.alc-exp{
+  margin:1em;
+}
+.link-button{
+  display:inline-block;
+  width:100%;
+}
+.img-style{
+  width:100%;
+  margin:auto;
+}
+.al-do{
+  font-size: 1.5rem;
+}
+.wrap{
+  background-color: #d66300;
+  padding:10px;
+  border-radius: 10px;
+}
+.buttons{
+  padding-bottom: 10px;
+}
+.image_{}
+.wrap-inner{
+  margin:20px;
+  background-color: white;
+  border-radius: 20px;
+}

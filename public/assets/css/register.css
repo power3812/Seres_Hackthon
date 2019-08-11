@@ -1,0 +1,15 @@
+
+.wrap{
+  background-color: #d66300;
+  border-radius: 10px;
+  padding: 30px;
+}
+.wrap-inner{
+  background-color: white;
+  border-radius: 10px;
+}
+.kain{
+  padding-top:20px;
+}
+.sinki{
+  margin-bottom:20px;

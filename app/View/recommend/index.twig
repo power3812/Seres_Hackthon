@@ -1,0 +1,53 @@
+{#レイアウトを継承します#}
+{% extends "layout/layout.twig" %}
+
+
+
+{#HTMLのタイトルを定義します。#}
+{% block title %}オススメのお酒は{% endblock %}
+
+{# 適用させたいスタイルシートのパスを指定します #}
+{% block header_scripts_add %}
+<link rel="stylesheet" href="/assets/css/recommend.css" >
+{% endblock %}
+{#ここから表示したい情報を記載します。#}
+{% block page_content %}
+<div class="wrap">
+  <div class="wrap-inner text-center">
+    <div class="page-header imp">
+        <h2>オススメのお酒は...</h2>
+    </div>
+    <div class="container">
+        <div class="box main-box">
+              <div class="row">
+                <div class="col-12 alc-name">
+                  {{result.name}}
+                </div>
+              </div>
+                <!-- beer.imgはテスト画像 実際はDBのalc.picPassを指定-->
+
+
+                <img src="/assets/img/alc/{{result.picpass}}" class="img-style">
+                <p><OBJECT DATA="/assets/txt/{{result.txt}}"TYPE="text/plain" WIDTH="90%" HEIGHT="90%" align="center"></OBJECT><p>
+
+                  <div class="col-12 text-center al-do">
+                    アルコール度数: {{result.amount}}%
+                  </div>
+<!--              <div class="row" style="margin:1em;">夏と言えばビール。冬でもビール。勿論春・秋もビール。食前酒として「とりあえずビール」と注文する人が多い。独特の苦味のあるのが特徴。</div>-->
+              <div class="row">
+                <div class="col-12 alc-exp">このお酒に関する詳しい情報は<a href="{{result.exppass}}">こちら</a></div>
+              </div>
+              <div class="buttons row">
+                <div class="col-6 text-center"><button class="link-button btn btn-info btn-lg btn-block" onclick="location.href='/recommend/'">他を探す</button></div>
+                <div class="col-6 text-center"><button class="link-button btn btn-info btn-lg btn-block" onclick="location.href='/logintop/'">戻る</button></div>
+              </div>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{#共通フッタとして追記したい情報を記載します。#}
+
+
+{% block footer_scripts_add %}{% endblock %}
