@@ -1,8 +1,20 @@
-#セレス 3days ハッカソン
+# セレス 3days ハッカソン 優勝
 https://www.wantedly.com/projects/328588
 
-#作成物概要
+# 作成物概要
+![スライド1](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%891.png)
+![スライド2](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%892.png)
+![スライド3](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%893.png)
+![スライド4](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%894.png)
+![スライド5](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%895.png)
+![スライド6](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%896.png)
+![スライド7](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%897.png)
+![スライド8](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%898.png)
 
+# 作成物
+![画像1](https://github.com/Yuta-Nakashima/seres/blob/master/slide/01.png)
+![画像2](https://github.com/Yuta-Nakashima/seres/blob/master/slide/02.png)
+![画像3](https://github.com/Yuta-Nakashima/seres/blob/master/slide/03.png)
 
 # Web Service Using Slim Framework 3 Skeleton Application
 
