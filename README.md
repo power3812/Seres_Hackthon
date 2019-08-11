@@ -15,6 +15,10 @@ https://www.wantedly.com/projects/328588
 ![画像1](https://github.com/Yuta-Nakashima/seres/blob/master/slide/01.png)
 ![画像2](https://github.com/Yuta-Nakashima/seres/blob/master/slide/02.png)
 ![画像3](https://github.com/Yuta-Nakashima/seres/blob/master/slide/03.png)
+![画像6](https://github.com/Yuta-Nakashima/seres/blob/master/slide/06.png)
+![画像4](https://github.com/Yuta-Nakashima/seres/blob/master/slide/04.png)
+![画像5](https://github.com/Yuta-Nakashima/seres/blob/master/slide/05.png)
+
 
 # Web Service Using Slim Framework 3 Skeleton Application
 
