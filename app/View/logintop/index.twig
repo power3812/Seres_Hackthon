@@ -12,10 +12,11 @@
 {#ここから表示したい情報を記載します。#}
 {% block page_content %}
 
-
+<div class="main">
 
 
     <div class="main text-center">
+
     <div class="body">
       <div class="explain">
       <h2 class="ruby">しゅしゅ</h2>
@@ -30,23 +31,46 @@
                   <div  class="optext" id="optext">
                     <div class="sub-main">
                     <h2>お酒酒めって？</h2>
-                    お酒酒めは一人ひとりに合ったお酒をお酒酒め(おススメ)します。<br>
-                    簡単なアンケートに答えるだけで（未実装）、今あなたにおススメのお酒を紹介します。<br>
+                    <div>
+                      「お酒酒め」は一人ひとりに合ったお酒をお酒酒め(オススメ)するサービス。
+                    </div>
+                    <div>
+                      様々なお酒の中から、あなたにピッタリのお酒を紹介します。
+                    </div>
 
                   </div>
                   <div class="album">
-                    <img class="img1" src="/assets/img/alc/1-beer.jpg" alt="Make your system smart.">
-                    <img class="img2" src="/assets/img/alc/10-shochu.jpg" alt="Smart Limited Liability Company">
-                    <img class="img3" src="/assets/img/alc/2-highball.jpg" alt="Smart Limited Liability Company">
-                    <img class="img4" src="/assets/img/alc/5-wine.jpg" alt="Smart Limited Liability Company">
+                    <img class="img1" src="/assets/img/alc/1-beer.jpg" alt="beer">
+                    <img class="img2" src="/assets/img/alc/10-shochu.jpg" alt="shochu">
+                    <img class="img3" src="/assets/img/alc/2-highball.jpg" alt="highball">
+                    <img class="img4" src="/assets/img/alc/5-wine.jpg" alt="wine">
                     </div>
                     <div class=sub-main>
                     <h2>サービス</h2>
-                    お酒を探す!のボタンを押し、4.5個の質問に答える（未実装）と回答時のあなたに合ったお酒をおススメします。<br>
-                    自分に合ったお酒を探してみよう！！！<br>
+                    <div style="text-align:left;　padding:2em;">
+                      <h4>
+                        お酒を探す
+                      </h4>
+                      <div class="feature-osyusyume">
+                        あなたにピッタリのお酒をお酒酒め(オススメ)する
+                      </div>
+                      <h4>
+                        お酒日記
+                      </h4>
+                      <div class="feature-osyusyume">
+                        あなたの飲んだお酒を記録しましょう！<span class="small-size-text">(近日公開予定)</span>
+                      </div>
+                      <h4>
+                        お酒相談
+                      </h4>
+                      <div class="feature-osyusyume">
+                        あなた専属のソムリエ/バーテンダーが新しいお酒に出会う手助けをします。<span class="small-size-text">(有料,近日公開予定)</span>
+                      </div>
+                    </div>
+
+                    <p class="lets">さあ、見つけましょう<p>
                   </div>
                   </div>
-                  <p class="lets">Let's お酒酒めっ！！<p>
                   <div class="btn-resize">
                     <button class="link-button btn btn-info btn-lg btn-block" onclick="location.href='/recommend/'">お酒を探す!</button>
                   </div>
@@ -55,7 +79,8 @@
             {#共通フッタとして追記したい情報を記載します。#}
             <div class = "footer">
             {% block footer_scripts_add %}{% endblock %}
-
+          </div>
+</div>
 
 
 

@@ -33,9 +33,9 @@ return [
                 'driver' => 'pdo_mysql',
                 'host' => '127.0.0.1',
                 'port' => '3306',
-                'user' => 'user_name',
-                'password' => 'user_password',
-                'dbname' => 'db_name',
+                'user' => 'team-b',
+                'password' => 'team-b!',
+                'dbname' => 'team-b',
                 'charset' => 'utf8'
             ]
         ]
