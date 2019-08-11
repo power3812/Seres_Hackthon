@@ -1,3 +1,9 @@
+#セレス 3days ハッカソン
+https://www.wantedly.com/projects/328588
+
+#作成物概要
+
+
 # Web Service Using Slim Framework 3 Skeleton Application
 
 This is a sample web application using Slim3 for 2021 graduates intern event for CERES INC.
