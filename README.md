@@ -1,5 +1,5 @@
 # セレス 3days ハッカソン 優勝
-https://www.wantedly.com/projects/328588
+https://www.wantedly.com/projects/328588  
 https://www.wantedly.com/companies/ceres-inc/post_articles/182055
 
 # 作成物概要
