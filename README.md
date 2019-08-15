@@ -1,5 +1,6 @@
 # セレス 3days ハッカソン 優勝
 https://www.wantedly.com/projects/328588
+https://www.wantedly.com/companies/ceres-inc/post_articles/182055
 
 # 作成物概要
 ![スライド1](https://github.com/Yuta-Nakashima/seres/blob/master/slide/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%891.png)
