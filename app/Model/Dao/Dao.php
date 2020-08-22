@@ -9,14 +9,6 @@ use Doctrine\DBAL\Query\QueryBuilder;
  *
  * DB接続及び汎用CRUDライブラリです
  *
- * 利用するには、
- * 1.src/settings.phpのdoctrineにDB接続情報を指定
- * 2.src/dependencies.phpにDB接続用のコンテナを$container['db']を作成
- * をしておきます。
- *
- * @copyright Ceres inc.
- * @author y-fukumoto <y-fukumoto@ceres-inc.jp>
- * @since 2018/08/29
  */
 abstract class Dao
 {
@@ -65,10 +57,6 @@ abstract class Dao
      * select Function
      *
      * 情報を取得する汎用SELECT関数です
-     *
-     * @copyright Ceres inc.
-     * @author y-fukumoto <y-fukumoto@ceres-inc.jp>
-     * @since 2018/08/28
      * @param array $param WHERE句として指定したい条件を連想配列で指定します。値に%があると、部分一致などもできます
      * @param string $sort ソートしたいカラム名を指定します
      * @param string $order 昇順=ASC 降順=DESCを指定します
@@ -127,10 +115,6 @@ abstract class Dao
      * 汎用INSERT関数です
      *
      * 連想配列で指定した情報を新規レコードとして挿入します
-     *
-     * @copyright Ceres inc.
-     * @author y-fukumoto <y-fukumoto@ceres-inc.jp>
-     * @since 2018/08/28
      * @param array $param 挿入したいデータを連想配列で指定します
      * @return int|bool 発番されればidを返送、失敗したらfalseを返送します
      */
@@ -170,9 +154,6 @@ abstract class Dao
      *
      * idというカラムは予約語で、各テーブルの主キーとなります。
      *
-     * @copyright Ceres inc.
-     * @author y-fukumoto <y-fukumoto@ceres-inc.jp>
-     * @since 2018/08/29
      * @param array $param 更新したい情報をid込みでセットします
      */
 
@@ -211,9 +192,6 @@ abstract class Dao
      *
      * idのレコードを削除します
      *
-     * @copyright Ceres inc.
-     * @author y-fukumoto <y-fukumoto@ceres-inc.jp>
-     * @since 2018/08/29
      * @param int $id 削除したいidをセットします
      */
 

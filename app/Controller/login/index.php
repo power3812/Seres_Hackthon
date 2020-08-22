@@ -29,7 +29,8 @@ $app->post('/login/', function (Request $request, Response $response) {
     //入力された情報から会員情報を取得
     $result = $user->select($param, "", "", 1,false);
 
-    if(password_verify($data["password"],$result["password"])){
+    if(password_verify($data["password"],$result["password"]))
+    {
         //セッションにユーザー情報を登録
         $this->session->set('user_info', $result);
 
@@ -39,7 +40,9 @@ $app->post('/login/', function (Request $request, Response $response) {
         return $response->withRedirect('/logintop/');
 
 
-    } else {
+    }
+    else
+    {
         //入力項目がマッチしない場合エラーを出す
         $data["error"] = "ユーザー名かパスワードが間違っています";
     }
