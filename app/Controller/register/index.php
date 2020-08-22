@@ -28,22 +28,26 @@ $app->post('/register/', function (Request $request, Response $response) {
     //入力項目がマッチしない場合エラーを出す 以下エラー処理
     $data["error"] = "";
 
-    //入力されたメールアドレスの会員が登録済みかどうかをチェックします
-    if ($user->select(array("email" => $data["email"]), "", "", 1, false)) {
+    //入力されたメールアドレスの会員が登録済みかどうかをチェック
+    if ($user->select(array("email" => $data["email"]), "", "", 1, false))
+    {
         $data["error"] = "このメールアドレスは既に会員登録済みです";
     }
     //2階入力されたpasswordが一致しない
-    if($data["password"]!==$data["password_re"]){
+    if($data["password"]!==$data["password_re"])
+    {
          $data["error"] = "パスワードの再入力に間違いがあります。";
     }
-    if(strlen($data["password"])<12){
+    if(strlen($data["password"])<12)
+    {
       $data["error"] = "パスワードは12文字以上に設定してください。";
     }
     if($data["age"]<20){
       $data["error"] = "20歳未満の方は登録できません。";
     }
 
-    if(strlen($data["error"])>0){
+    if(strlen($data["error"])>0)
+    {
       // 入力フォームを再度表示します
       return $this->view->render($response, 'register/register.twig', $data);
     }

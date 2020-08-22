@@ -3,28 +3,10 @@
 use Slim\Http\Request;
 use Slim\Http\Response;
 use Model\Dao\User;
+use Model\Dao\Alc;
+use Model\Dao\History;
 use Controller\login\index;
 
-
-/*
-// recommend/index.twigのテスト用ルーティング
-// ここのコメントアウトを取る場合は、use Model\Dao\Alc;以下をコメントアウト
-$app->get('/recommend/', function (Request $request, Response $response) {
-    // Render index view
-    return $this->view->render($response, 'recommend/index.twig');
-});*/
-
-use Model\Dao\Alc;
-
-use Model\Dao\History;
-
-// ログイン画面コントローラ
-
-
-
-
-
-// ログインロジックコントローラ
 $app->get('/report/', function (Request $request, Response $response) {
 
     if(is_null($this->session->user_info )){
